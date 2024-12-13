@@ -11,6 +11,9 @@ body{
 header{
     height: 20vh;
     background-color: orange;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
 nav{
