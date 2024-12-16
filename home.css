@@ -107,13 +107,51 @@ nav .menu li{
 }
 
 /*Menu de categorias*/
-nav .hamburguer-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav .dropdown{
+    position: relative;    
+    display: inline-block;
+    flex-direction: row;
     cursor: pointer;
+    height: 100%;
+    padding: 10px;
+    z-index: 1;
 }
 
 /*Icone menu*/
+nav .dropdown .dropdown-icon {
+    margin-right: 5px;
+}
 
+/*Conteudo do dropdown*/
+nav .dropdown .dropdown-conteudo{
+    display: none;
+    position: absolute;
+    background-color: #757575;
+    min-width: 100%;
+}
+
+/*Itens do dropdown*/
+nav .dropdown .dropdown-conteudo a{
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: black;    
+    width: 100%;
+}
+
+/*Quanod o mouse passa sobre o Categorias, mostra o conteudo do dropdown*/
+.dropdown:hover .dropdown-conteudo {
+    display: block;
+}
+
+/*Muda a cor do fundo do item quando passa o mouse por cima*/
+.dropdown-conteudo a:hover{
+    background-color: #979797;
+}
+
+/*Muda o fundo de categorias quando passa o mouse em cima*/
+.dropdown:hover{
+    background-color: rgb(17, 17, 17);
+}
+    
     
