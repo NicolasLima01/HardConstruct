@@ -20,12 +20,11 @@ header{
 }
 
 nav{
-    height:10vh;    
-    padding: 0 70px;
+    height:10vh;  
     background-color: black;    
     color: white;
     display: flex;
-    justify-content: center; /*Deixa o menu centralizado horizontalmente*/
+    justify-content: center;
 }
 
 main{
@@ -88,11 +87,18 @@ footer{
 
 /*NAV*/
 
+nav .container-menu{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+}
+
 /*Menu do nav*/
  nav .menu{
     width: 100%; /*Faz com que a lista ocupe todo o espaço do nav*/    
     display: flex;
-    flex-direction:row ;
+    flex-direction: row ;
     justify-content: space-around;
     align-items: center;    
  }
@@ -102,32 +108,44 @@ nav .menu li{
     display: flex;
     align-items: center;
     height: 100%;
+    width: 20%; /*Faz com que as opções dos menus tenham o mesmo tamanho*/
+    justify-content: center;
     list-style-type: none;
     cursor: pointer;
+}
+
+/*Ocorre quando o mouse está sobre a opção do menu*/
+nav .menu li:hover{
+    cursor: pointer;
+    background-color: rgb(17, 17, 17);
+}
+
+/*Links do menu*/
+nav .menu li a{
+text-decoration: none;
+color: white;
 }
 
 /*Menu de categorias*/
 nav .dropdown{
     position: relative;    
-    display: inline-block;
-    flex-direction: row;
+    display: block;
     cursor: pointer;
+    gap: 5px;
     height: 100%;
-    padding: 10px;
+    width: 200px;
     z-index: 1;
 }
 
 /*Icone menu*/
-nav .dropdown .dropdown-icon {
-    margin-right: 5px;
-}
+
 
 /*Conteudo do dropdown*/
 nav .dropdown .dropdown-conteudo{
     display: none;
     position: absolute;
     background-color: #757575;
-    min-width: 100%;
+    min-width: 100%;    
 }
 
 /*Itens do dropdown*/
