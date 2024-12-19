@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     width: 100%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-header{
+header {
     height: 20vh;
     background-color: orange;
     padding: 0 20px;
@@ -19,19 +19,19 @@ header{
     align-items: center;
 }
 
-nav{
-    height:10vh;  
-    background-color: black;    
+nav {
+    height: 10vh;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: center;
 }
 
-main{
+main {
     height: 80vh;
 }
 
-footer{
+footer {
     height: 30vh;
     background-color: black;
 }
@@ -41,24 +41,24 @@ footer{
 /*--------------------*/
 
 /*Div de busca*/
-.caixaBusca{
+.caixaBusca {
     display: flex;
     align-items: center;
     height: 40px;
     width: 600px;
-    background-color: white; 
+    background-color: white;
     padding: 0 10px;
     gap: 5px;
     border-radius: 10px;
 }
 
 /*Form de busca*/
-.caixaBusca .busca{
+.caixaBusca .busca {
     height: 100%;
     width: 100%;
     font-size: 14px;
     border: none;
-    background-color: transparent;    
+    background-color: transparent;
 }
 
 /*Visibilidade do input*/
@@ -67,12 +67,12 @@ footer{
 }
 
 /*Ícone de busca*/
-.caixaBusca .lupaBusca{
+.caixaBusca .lupaBusca {
     cursor: pointer;
 }
 
 /*Ícone de cadastro*/
-.cadastroIcon{        
+.cadastroIcon {
     height: 120px;
     width: 120px;
     display: flex;
@@ -82,7 +82,7 @@ footer{
 }
 
 /*Link do cadastro*/
-.cadastroIcon a{
+.cadastroIcon a {
     color: black;
     text-decoration: none;
 }
@@ -91,7 +91,7 @@ footer{
 /*        NAV         */
 /*--------------------*/
 
-nav .container-menu{
+nav .container-menu {
     width: 90%;
     display: flex;
     justify-content: center;
@@ -99,80 +99,88 @@ nav .container-menu{
 }
 
 /*Menu do nav*/
- nav .menu{
-    width: 100%; /*Faz com que a lista ocupe todo o espaço do nav*/    
+nav .menu {
+    width: 100%;
+    /*Faz com que a lista ocupe todo o espaço do nav*/
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;    
- }
+    align-items: center;
+}
 
 /*Itens do menu*/
-nav .menu li{
+nav .menu li {
     display: flex;
     align-items: center;
     height: 100%;
-    width: 20%; /*Faz com que as opções dos menus tenham o mesmo tamanho*/
+    width: 20%;
+    /*Faz com que as opções dos menus tenham o mesmo tamanho*/
     justify-content: center;
     list-style-type: none;
     cursor: pointer;
 }
 
 /*Ocorre quando o mouse está sobre a opção do menu*/
-nav .menu li:hover{
+nav .menu li:hover {
     cursor: pointer;
     background-color: rgb(17, 17, 17);
 }
 
 /*Links do menu*/
-nav .menu li a{
-text-decoration: none;
-color: white;
+nav .menu li a {
+    text-decoration: none;
+    color: white;
 }
 
 /*Menu de categorias*/
-nav  .dropdown{
-    position: relative;    
+nav .dropdown {
+    position: relative;
     display: block;
     cursor: pointer;
     gap: 5px;
     height: 100%;
     width: 200px;
     z-index: 1;
-    text-align: center; /*Faz com que o texto fique horizontalmente no meio do item*/ 
+    text-align: center;
+    /*Faz com que o texto fique horizontalmente no meio do item*/
 }
 
 /*Icone menu*/
-nav .dropdown .dropdown-icon{
+nav .dropdown .dropdown-icon {
     display: inline-block;
-    vertical-align: middle;    
-    top: 50%; /*Faz com que o icone fique no meio do item*/
-    transform: translateY(90%); /*Faz com que o icone fique no meio do item*/    
+    vertical-align: middle;
+    top: 50%;
+    /*Faz com que o icone fique no meio do item*/
+    transform: translateY(90%);
+    /*Faz com que o icone fique no meio do item*/
 }
 
-nav .dropdown .dropdown-categorias{
+nav .dropdown .dropdown-categorias {
     display: inline-block;
-    vertical-align: middle;    
-    top: 50%; /*Faz com que o texto fique no meio do item*/
-    transform: translateY(100%); /*Faz com que o texto fique no meio do item*/    
+    vertical-align: middle;
+    top: 50%;
+    /*Faz com que o texto fique no meio do item*/
+    transform: translateY(100%);
+    /*Faz com que o texto fique no meio do item*/
 }
 
 /*Conteudo do dropdown*/
-nav .dropdown .dropdown-conteudo{
+nav .dropdown .dropdown-conteudo {
     display: none;
     position: absolute;
     background-color: rgb(17, 17, 17);
-    min-width: 100%;   
+    min-width: 100%;
     line-height: normal;
-    top: 100%; /*Faz com que o conteudo do dropdown fique abaixo do item*/
+    top: 100%;
+    /*Faz com que o conteudo do dropdown fique abaixo do item*/
 }
 
 /*Itens do dropdown*/
-nav .dropdown .dropdown-conteudo a{
+nav .dropdown .dropdown-conteudo a {
     display: block;
     padding: 10px 5px;
     text-decoration: none;
-    color: white;    
+    color: white;
     width: 100%;
 }
 
@@ -182,32 +190,86 @@ nav .dropdown .dropdown-conteudo a{
 }
 
 /*Muda a cor do fundo do item quando passa o mouse por cima*/
-.dropdown-conteudo a:hover{
+.dropdown-conteudo a:hover {
     background-color: #979797;
 }
 
 /*Muda o fundo de categorias quando passa o mouse em cima*/
-.dropdown:hover{
+.dropdown:hover {
     background-color: rgb(17, 17, 17);
 }
-    
+
 /*--------------------*/
 /*        MAIN        */
 /*--------------------*/
+
+.slider {
+    display: block;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider li img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    vertical-align: top;    
+    opacity: 0;  /*Deixa a imagem invisível*/
+    visibility: hidden; /*Deixa a imagem invisível*/
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: green;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label{
+    left: 20px; /*Determina o local do botão de radio*/
+    bottom: 50% /*Faz com que o botão fique centralizado verticalmente*/
+}
+
+.slider li:nth-child(2) label{
+    right: 20px; /*Determina o local do botão de radio*/
+    bottom: 50% /*Faz com que o botão fique centralizado verticalmente*/
+}
+
+.slider input:checked ~ img{
+    opacity: 1;  /*Quando o botão está checado, deixa a imagem visivel*/
+    visibility: visible; /*Quando o botão está checado, deixa a imagem visivel*/
+    z-index: 10;
+}
+*/
 
 /*--------------------*/
 /*       FOOTER       */
 /*--------------------*/
 
-.container-footer{
+.container-footer {
     padding: 20px 100px;
 }
-.container-footer h3{
+
+.container-footer h3 {
     color: white;
     margin-bottom: 10px;
 }
 
-.referencias li a{
+.referencias li a {
     color: white;
     text-decoration: none;
 }
