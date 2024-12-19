@@ -127,7 +127,7 @@ color: white;
 }
 
 /*Menu de categorias*/
-nav .dropdown{
+nav  .dropdown{
     position: relative;    
     display: block;
     cursor: pointer;
@@ -140,11 +140,16 @@ nav .dropdown{
 /*Icone menu*/
 
 
+nav .dropdown p{
+    margin-left: 0;
+    width: 80px;
+}
+
 /*Conteudo do dropdown*/
 nav .dropdown .dropdown-conteudo{
     display: none;
     position: absolute;
-    background-color: #757575;
+    background-color: rgb(17, 17, 17);
     min-width: 100%;    
 }
 
@@ -153,7 +158,7 @@ nav .dropdown .dropdown-conteudo a{
     display: block;
     padding: 10px 5px;
     text-decoration: none;
-    color: black;    
+    color: white;    
     width: 100%;
 }
 
