@@ -135,14 +135,22 @@ nav  .dropdown{
     height: 100%;
     width: 200px;
     z-index: 1;
+    text-align: center; /*Faz com que o texto fique horizontalmente no meio do item*/ 
 }
 
 /*Icone menu*/
+nav .dropdown .dropdown-icon{
+    display: inline-block;
+    vertical-align: middle;    
+    top: 50%; /*Faz com que o icone fique no meio do item*/
+    transform: translateY(90%); /*Faz com que o icone fique no meio do item*/    
+}
 
-
-nav .dropdown p{
-    margin-left: 0;
-    width: 80px;
+nav .dropdown .dropdown-categorias{
+    display: inline-block;
+    vertical-align: middle;    
+    top: 50%; /*Faz com que o texto fique no meio do item*/
+    transform: translateY(100%); /*Faz com que o texto fique no meio do item*/    
 }
 
 /*Conteudo do dropdown*/
@@ -150,7 +158,9 @@ nav .dropdown .dropdown-conteudo{
     display: none;
     position: absolute;
     background-color: rgb(17, 17, 17);
-    min-width: 100%;    
+    min-width: 100%;   
+    line-height: normal;
+    top: 100%; /*Faz com que o conteudo do dropdown fique abaixo do item*/
 }
 
 /*Itens do dropdown*/
