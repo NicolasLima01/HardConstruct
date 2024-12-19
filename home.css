@@ -36,7 +36,9 @@ footer{
     background-color: black;
 }
 
-/*HEADER*/
+/*--------------------*/
+/*       HEADER       */
+/*--------------------*/
 
 /*Div de busca*/
 .caixaBusca{
@@ -85,7 +87,9 @@ footer{
     text-decoration: none;
 }
 
-/*NAV*/
+/*--------------------*/
+/*        NAV         */
+/*--------------------*/
 
 nav .container-menu{
     width: 90%;
@@ -187,4 +191,23 @@ nav .dropdown .dropdown-conteudo a{
     background-color: rgb(17, 17, 17);
 }
     
-    
+/*--------------------*/
+/*        MAIN        */
+/*--------------------*/
+
+/*--------------------*/
+/*       FOOTER       */
+/*--------------------*/
+
+.container-footer{
+    padding: 20px 100px;
+}
+.container-footer h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.referencias li a{
+    color: white;
+    text-decoration: none;
+}
