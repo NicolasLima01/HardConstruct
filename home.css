@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -28,7 +28,8 @@ nav {
 }
 
 main {
-    height: 80vh;
+    height: 100vh;
+    background-color: whitesmoke;
 }
 
 footer {
@@ -91,7 +92,7 @@ footer {
 /*        NAV         */
 /*--------------------*/
 
-nav .container-menu {
+.container-menu {
     width: 90%;
     display: flex;
     justify-content: center;
@@ -99,7 +100,7 @@ nav .container-menu {
 }
 
 /*Menu do nav*/
-nav .menu {
+.menu {
     width: 100%;
     /*Faz com que a lista ocupe todo o espaço do nav*/
     display: flex;
@@ -109,7 +110,7 @@ nav .menu {
 }
 
 /*Itens do menu*/
-nav .menu li {
+.menu li {
     display: flex;
     align-items: center;
     height: 100%;
@@ -121,19 +122,19 @@ nav .menu li {
 }
 
 /*Ocorre quando o mouse está sobre a opção do menu*/
-nav .menu li:hover {
+.menu li:hover {
     cursor: pointer;
     background-color: rgb(17, 17, 17);
 }
 
 /*Links do menu*/
-nav .menu li a {
+.menu li a {
     text-decoration: none;
     color: white;
 }
 
 /*Menu de categorias*/
-nav .dropdown {
+.dropdown {
     position: relative;
     display: block;
     cursor: pointer;
@@ -146,7 +147,7 @@ nav .dropdown {
 }
 
 /*Icone menu*/
-nav .dropdown .dropdown-icon {
+.dropdown .dropdown-icon {
     display: inline-block;
     vertical-align: middle;
     top: 50%;
@@ -155,7 +156,7 @@ nav .dropdown .dropdown-icon {
     /*Faz com que o icone fique no meio do item*/
 }
 
-nav .dropdown .dropdown-categorias {
+.dropdown .dropdown-categorias {
     display: inline-block;
     vertical-align: middle;
     top: 50%;
@@ -165,7 +166,7 @@ nav .dropdown .dropdown-categorias {
 }
 
 /*Conteudo do dropdown*/
-nav .dropdown .dropdown-conteudo {
+.dropdown .dropdown-conteudo {
     display: none;
     position: absolute;
     background-color: rgb(17, 17, 17);
@@ -176,7 +177,7 @@ nav .dropdown .dropdown-conteudo {
 }
 
 /*Itens do dropdown*/
-nav .dropdown .dropdown-conteudo a {
+.dropdown .dropdown-conteudo a {
     display: block;
     padding: 10px 5px;
     text-decoration: none;
@@ -203,9 +204,11 @@ nav .dropdown .dropdown-conteudo a {
 /*        MAIN        */
 /*--------------------*/
 
+/*SLIDER*/
+
 .slider {
     display: block;
-    height: 200px;
+    height: 170px;
     width: 100%;
     position: relative;
 }
@@ -234,7 +237,6 @@ nav .dropdown .dropdown-conteudo a {
     cursor: pointer;
     background-color: white /*Cor do botão de radio*/;
     display: block;
-    bottom: 10px;  
     height: 20px;    
     width: 20px;
     z-index: 10;
@@ -243,12 +245,12 @@ nav .dropdown .dropdown-conteudo a {
 
 .slider li:nth-child(1) label{
     left: 20px; /*Determina o local do botão de radio*/
-    bottom: 50% /*Faz com que o botão fique centralizado verticalmente*/
+    bottom: 10px; /*Faz com que o botão fique centralizado verticalmente*/
 }
 
 .slider li:nth-child(2) label{
-    right: 20px; /*Determina o local do botão de radio*/
-    bottom: 50% /*Faz com que o botão fique centralizado verticalmente*/
+    left: 50px; /*Determina o local do botão de radio*/
+    bottom: 10px; /*Faz com que o botão fique centralizado verticalmente*/
 }
 
 .slider input:checked ~ img{
@@ -257,6 +259,37 @@ nav .dropdown .dropdown-conteudo a {
     z-index: 10;
 }
 
+/*CARD*/
+
+.main-card{
+    padding: 20px 50px;
+}
+
+.main-card h2{
+    margin-bottom: 20px;
+}
+
+/*Container dos cards*/
+.container-card{
+    display: flex;
+    justify-content: start;    
+}
+
+/*Propriedades do card*/
+.container-card .card{
+    width: 200px;
+    height: 300px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px black ;
+    transition: 0.3s;
+}
+
+/*Preço do card*/
+.container-card .card h4{
+    color:orangered;    
+}
 
 /*--------------------*/
 /*       FOOTER       */
