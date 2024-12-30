@@ -37,9 +37,9 @@ footer {
     background-color: black;
 }
 
-/*--------------------*/
-/*       HEADER       */
-/*--------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+/*                                            HEADER                                                  */
+/*----------------------------------------------------------------------------------------------------*/
 
 /*Div de busca*/
 .caixaBusca {
@@ -88,10 +88,11 @@ footer {
     text-decoration: none;
 }
 
-/*--------------------*/
-/*        NAV         */
-/*--------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+/*                                             NAV                                                    */
+/*----------------------------------------------------------------------------------------------------*/
 
+/*Container do nav*/
 .container-menu {
     width: 90%;
     display: flex;
@@ -200,24 +201,27 @@ footer {
     background-color: rgb(17, 17, 17);
 }
 
-/*--------------------*/
-/*        MAIN        */
-/*--------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+/*                                            MAIN                                                    */
+/*----------------------------------------------------------------------------------------------------*/
 
 /*SLIDER*/
 
+/*Container do slider*/
 .slider {
     display: block;
-    height: 170px;
+    height: 200px;
     width: 100%;
     position: relative;
 }
 
+/*Lista de imagens do slider*/
 .slider li {
     list-style: none;
     position: absolute;
 }
 
+/*Imagem do slider*/
 .slider li img {
     height: 100%;
     width: 100%;
@@ -225,13 +229,14 @@ footer {
     vertical-align: top;    
     opacity: 0;  /*Deixa a imagem invisível*/
     visibility: hidden; /*Deixa a imagem invisível*/
+    transition: 1.5s; /*Tempo de transição da imagem do slider*/
 }
 
 .slider input {
-    display: none;
-    
+    display: none; /*Esconde o botão de radio*/
 }
 
+/*Botão de radio*/
 .slider label {
     position: absolute;
     cursor: pointer;
@@ -243,28 +248,39 @@ footer {
     border-radius: 50px;
 }
 
+/*Posicionamento do botão de radio*/
 .slider li:nth-child(1) label{
     left: 20px; /*Determina o local do botão de radio*/
     bottom: 10px; /*Faz com que o botão fique centralizado verticalmente*/
 }
 
+/*Posicionamento do botão de radio*/
 .slider li:nth-child(2) label{
     left: 50px; /*Determina o local do botão de radio*/
     bottom: 10px; /*Faz com que o botão fique centralizado verticalmente*/
 }
 
+/*Posicionamento do botão de radio*/
 .slider input:checked ~ img{
     opacity: 1;  /*Quando o botão está checado, deixa a imagem visivel*/
     visibility: visible; /*Quando o botão está checado, deixa a imagem visivel*/
     z-index: 10;
 }
 
+/*Muda a cor do botão de radio quando está checado*/
+.slider input:checked ~ label{
+    background-color: #000000; 
+    transition: 1.5s; /*Tempo de transição da cor do botão de radio*/
+}
+
 /*CARD*/
 
+/*Container principal dos cards, serve para alinhar o título e o container-card*/
 .main-card{
     padding: 20px 50px;
 }
-
+ 
+/*Título dos cards*/
 .main-card h2{
     margin-bottom: 20px;
 }
@@ -291,19 +307,22 @@ footer {
     color:orangered;    
 }
 
-/*--------------------*/
-/*       FOOTER       */
-/*--------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+/*                                            FOOTER                                                  */
+/*----------------------------------------------------------------------------------------------------*/
 
+/*Container do footer*/
 .container-footer {
     padding: 20px 100px;
 }
 
+/*Referencias do footer*/
 .container-footer h3 {
     color: white;
     margin-bottom: 10px;
 }
 
+/*Lista de referencias do footer*/
 .referencias li a {
     color: white;
     text-decoration: none;
