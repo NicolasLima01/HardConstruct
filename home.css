@@ -293,19 +293,31 @@ footer {
 
 /*Propriedades do card*/
 .container-card .card{
-    width: 200px;
+    width: 250px;
     height: 300px;
-    margin: 0 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px black ;
-    transition: 0.3s;
+    margin: 0 5px; 
+    padding: 10px;
+    background-color: white; /*Cor do card*/
+    border-radius: 10px; /*Borda do card*/
+    box-shadow: 2px 5px 10px 0px #0004; /*Sombra do card*/
+    transition: 0.3s; /*Tempo de transição do card*/
+    display: flex;
+    flex-direction: column;
 }
 
 /*Preço do card*/
-.container-card .card h4{
+.container-card .card h3{
+    margin: 10px 0;
     color:orangered;    
 }
+
+.container-card .card img{
+    align-self: center;    
+    width: 90%;
+    height: 50%;
+    margin: 10px 0;
+}
+
 
 /*----------------------------------------------------------------------------------------------------*/
 /*                                            FOOTER                                                  */
