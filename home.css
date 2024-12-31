@@ -72,21 +72,19 @@ footer {
     cursor: pointer;
 }
 
-/*Ícone de cadastro*/
+/*Ícone e link do cadastro*/
 .cadastroIcon {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-/*Link do cadastro*/
-.cadastroIcon a {
     color: black;
     text-decoration: none;
 }
+
+
 
 /*----------------------------------------------------------------------------------------------------*/
 /*                                             NAV                                                    */
