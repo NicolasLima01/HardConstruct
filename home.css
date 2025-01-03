@@ -314,6 +314,13 @@ footer {
     width: 90%;
     height: 50%;
     margin: 10px 0;
+    cursor: pointer; /*Muda o cursor para a mãozinha quando passa por cima da imagem*/
+}
+
+.container-card .card:hover{
+    transform: scale(1.05); /*Efeito de zoom no card*/
+    transition: 0.3s; /*Tempo de transição do card*/
+    border: #ffa500 solid 5px; /*Cor da borda do card*/
 }
 
 
