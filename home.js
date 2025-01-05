@@ -2,10 +2,10 @@
 let count = 1;
 document.getElementById("slide1").checked = true; //torna o radio do slide1 checado
 
-//Roda a função de 2 em 2s
+//Roda a função de 5 em 5s
 setInterval( function(){
  nextImage();
-}, 3000) 
+}, 5000) 
 
 //Função que passa as imagens do slide automáticamente  
 function nextImage() {
