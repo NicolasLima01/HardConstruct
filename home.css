@@ -74,8 +74,8 @@ footer {
 
 /*Ícone e link do cadastro*/
 .cadastroIcon {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -352,4 +352,36 @@ footer {
 .referencias li a {
     color: white;
     text-decoration: none;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/*                                            FOOTER                                                  */
+/*----------------------------------------------------------------------------------------------------*/
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+main form input {
+    width: 300px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+
+main form button{
+    background-color: #f08000;
+    color: white;
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
 }
