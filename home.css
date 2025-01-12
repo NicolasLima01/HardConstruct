@@ -124,6 +124,12 @@ footer {
 .menu li:hover {
     cursor: pointer;
     background-color: rgb(17, 17, 17);
+    list-style-type: none;
+}
+
+.menu li:hover ~ .slider label{
+    opacity: 0;
+    visibility: hidden;
 }
 
 /*Links do menu*/
@@ -248,13 +254,13 @@ footer {
 
 /*Posicionamento do botão de radio*/
 .slider li:nth-child(1) label{
-    left: 210px; /*Determina o local do botão de radio*/
+    left: 350px; /*Determina o local do botão de radio*/
     bottom: 10px; /*Faz com que o botão fique centralizado verticalmente*/
 }
 
 /*Posicionamento do botão de radio*/
 .slider li:nth-child(2) label{
-    left: 250px; /*Determina o local do botão de radio*/
+    left: 390px; /*Determina o local do botão de radio*/
     bottom: 10px; /*Faz com que o botão fique centralizado verticalmente*/
 }
 
