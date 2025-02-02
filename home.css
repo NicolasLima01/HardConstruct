@@ -34,7 +34,7 @@ main {
 
 footer {
     height: 30vh;
-    background-color: black;
+    background-color: white;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -350,15 +350,19 @@ footer {
 
 /*Referencias do footer*/
 .container-footer h3 {
-    color: white;
+    color: rgb(37, 37, 37);
     margin-bottom: 10px;
 }
 
 /*Lista de referencias do footer*/
 .referencias li a {
-    color: white;
+    color: rgb(37, 37, 37);
     text-decoration: none;
 }
 
-
+footer p {
+    margin: 0 200px;
+    color: rgb(37, 37, 37);
+    text-align: center;
+}
 
