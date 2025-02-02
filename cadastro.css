@@ -269,5 +269,5 @@ form button:hover{
 footer p {
     margin: 0 200px;
     color: rgb(37, 37, 37);
-    text-align: center;
+    text-align: center; /**/
 }
