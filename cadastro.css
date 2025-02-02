@@ -31,13 +31,14 @@ main {
     display: flex;
     justify-content: center;
     height: 100vh;
-    padding: 100px 0;
+    padding: 25px 0;
     background-color: whitesmoke;
 }
 
 footer {
     height: 30vh;
     background-color: black;
+    color: white;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -206,13 +207,27 @@ footer {
 /*                                            MAIN                                                  */
 /*----------------------------------------------------------------------------------------------------*/
 
-form {
+.formulario{
     background-color: white;
-    height: 500px;
+    height: 600px;
     width: 400px;
-    padding: 0 50px;
     border: #979797 solid 1px;
     border-radius: 20px;
+}
+
+.formulario h1{
+    text-align: center;
+    align-content: center;
+    margin: 15px 0;
+}
+
+.formulario hr{
+    width: 400px; 
+}
+
+form {
+    height: 80%;
+    margin: 10px 50px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -238,7 +253,7 @@ form button{
     background-color: #f08000;
     color: white;
     margin-top: 30px;
-    width: 150px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
 }
