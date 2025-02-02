@@ -209,7 +209,7 @@ footer {
 /*                                            MAIN                                                    */
 /*----------------------------------------------------------------------------------------------------*/
 
-/*SLIDER*/
+/*----------------------SLIDER---------------------------*/
 
 /*Container do slider*/
 .slider {
@@ -277,7 +277,7 @@ footer {
     transition: 1.5s; /*Tempo de transição da cor do botão de radio*/
 }
 
-/*CARD*/
+/*----------------------CARD---------------------------*/
 
 /*Container principal dos cards, serve para alinhar o título e o container-card*/
 .main-card{
@@ -354,12 +354,14 @@ footer {
     margin-bottom: 10px;
 }
 
+/*Paragrafos do footer*/
 footer p {
     margin: 0 200px;
     color: rgb(37, 37, 37);
     text-align: center;
 }
 
+/*Links do footer*/
 footer p a{
     color: #000000;
     text-decoration: none;
@@ -377,14 +379,17 @@ footer p a{
     justify-content: center;
 }
 
+/*Centralizando o título*/
 .container-referencias h1{
     align-self: center;
 }
 
+/*Deixando os itens da lista sem estilo*/
 .referencias li{
     list-style: none;
 }
 
+/*Links de referências*/
 .referencias li a {
     color: rgb(37, 37, 37);
     text-decoration: none;

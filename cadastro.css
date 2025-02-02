@@ -206,6 +206,7 @@ footer {
 /*                                            MAIN                                                  */
 /*----------------------------------------------------------------------------------------------------*/
 
+/*Div do formulário*/
 .formulario{
     background-color: white;
     height: 600px;
@@ -214,16 +215,19 @@ footer {
     border-radius: 20px;
 }
 
+/*Título*/
 .formulario h1{
     text-align: center;
     align-content: center;
     margin: 15px 0;
 }
 
+/*Linha*/
 .formulario hr{
     width: 400px; 
 }
 
+/*Formulário*/
 form {
     height: 80%;
     margin: 10px 50px;
@@ -233,11 +237,13 @@ form {
     justify-content: center;
 }
 
+/*Rótulo do formulário*/
 form label {
     font-size: 18px;
     margin: 0 5px;
 }
 
+/*Áreas de entrada de dados do formulário*/
 form input {
     background-color: rgb(253, 253, 253);
     width: 100%;
@@ -247,6 +253,7 @@ form input {
     border-radius: 5px;
 }
 
+/*Botão do formulário*/
 form button{
     align-self: center;
     background-color: #f08000;
@@ -257,6 +264,7 @@ form button{
     border-radius: 10px;
 }
 
+/*Acontece quando o mouse está sobre o botão*/
 form button:hover{
     background-color: #ffa500;
     cursor: pointer;
@@ -266,8 +274,9 @@ form button:hover{
 /*                                            FOOTER                                                  */
 /*----------------------------------------------------------------------------------------------------*/
 
+/*Texto do footer*/
 footer p {
     margin: 0 200px;
     color: rgb(37, 37, 37);
-    text-align: center; /**/
+    text-align: center; 
 }
