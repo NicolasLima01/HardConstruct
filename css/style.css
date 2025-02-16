@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    height: 20vh;
+    background-color: #ffa500;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+footer {
+    height: 30vh;
+    background-color: white;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/*                                            HEADER                                                  */
+/*----------------------------------------------------------------------------------------------------*/
+
+/*Div de busca*/
+.caixaBusca {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 600px;
+    background-color: white;
+    padding: 0 10px;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+/*Form de busca*/
+.caixaBusca .busca {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+}
+
+/*Visibilidade do input*/
+.caixaBusca input.busca:focus-visible {
+    outline: none;
+}
+
+/*Ícone de busca*/
+.caixaBusca .lupaBusca {
+    cursor: pointer;
+}
+
+/*Ícone e link do cadastro*/
+.cadastroIcon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/*                                             NAV                                                    */
+/*----------------------------------------------------------------------------------------------------*/
+
+/*Container do nav*/
+.container-menu {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+}
+
+/*Menu do nav*/
+.menu {
+    width: 100%;
+    /*Faz com que a lista ocupe todo o espaço do nav*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Itens do menu*/
+.menu li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    /*Faz com que as opções dos menus tenham o mesmo tamanho*/
+    justify-content: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+/*Ocorre quando o mouse está sobre a opção do menu*/
+.menu li:hover {
+    cursor: pointer;
+    background-color: rgb(17, 17, 17);
+    list-style-type: none;
+}
+
+/*Links do menu*/
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*------------------ DROPDOWN ----------------------*/
+
+/*Menu de categorias*/
+.dropdown {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    gap: 5px;
+    height: 100%;
+    width: 200px;
+    z-index: 1;
+    text-align: center;
+    /*Faz com que o texto fique horizontalmente no meio do item*/
+}
+
+/*Icone menu*/
+.dropdown .dropdown-icon {
+    display: inline-block;
+    vertical-align: middle;
+    top: 50%;
+    /*Faz com que o icone fique no meio do item*/
+    transform: translateY(90%);
+    /*Faz com que o icone fique no meio do item*/
+}
+
+.dropdown .dropdown-categorias {
+    display: inline-block;
+    vertical-align: middle;
+    top: 50%;
+    /*Faz com que o texto fique no meio do item*/
+    transform: translateY(100%);
+    /*Faz com que o texto fique no meio do item*/
+}
+
+/*Conteudo do dropdown*/
+.dropdown .dropdown-conteudo {
+    display: none;
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    min-width: 100%;
+    line-height: normal;
+    top: 100%;
+    /*Faz com que o conteudo do dropdown fique abaixo do item*/
+    border-bottom-left-radius: 10px; /*borda redonda no canto inferior direito*/
+    border-bottom-right-radius: 10px; /*borda redonda no canto inferior esquerdo*/
+}
+
+.dropdown-conteudo li{
+    list-style: none;
+    border-top: #000000 solid 1px;
+}
+
+/*Itens do dropdown*/
+.dropdown-conteudo a {
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+/*Quando o mouse passa sobre o Categorias, mostra o conteudo do dropdown*/
+.dropdown:hover .dropdown-conteudo {
+    display: block;
+}
+
+/*Muda a cor do fundo do item quando passa o mouse por cima*/
+.dropdown-conteudo a:hover {
+    background-color: #747474;
+}
+
+/*Muda o fundo de categorias quando passa o mouse em cima*/
+.dropdown:hover {
+    background-color: rgb(17, 17, 17);
+}
+
+/*Ocorre quando o mouse está sobre o último elemento do dropdown*/
+.dropdown-conteudo li:nth-child(5) a:hover{
+    border-bottom-left-radius: 10px; /*borda redonda no canto inferior direito*/
+    border-bottom-right-radius: 10px; /*borda redonda no canto inferior esquerdo*/
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/*                                            FOOTER                                                  */
+/*----------------------------------------------------------------------------------------------------*/
+
+/*Container do footer*/
+.container-footer {
+    padding: 20px 100px;
+}
+
+/*Referencias do footer*/
+.container-footer h3 {
+    color: rgb(37, 37, 37);
+    margin-bottom: 10px;
+}
+
+/*Paragrafos do footer*/
+footer p {
+    margin: 0 200px;
+    color: rgb(37, 37, 37);
+    text-align: center;
+}
+
+/*Links do footer*/
+footer p a{
+    color: #000000;
+    text-decoration: none;
+}

@@ -1,0 +1,41 @@
+/*----------------------------------------------------------------------------------------------------*/
+/*                                           REFERÊNCIAS                                              */
+/*----------------------------------------------------------------------------------------------------*/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Lista de referencias do footer*/
+.container-referencias {
+    background-color: white;
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Centralizando o título*/
+.container-referencias h1{
+    align-self: center;
+}
+
+.referencias{
+    padding: 20px;
+}
+
+/*Deixando os itens da lista como circulo*/
+.referencias li{
+    list-style-type: square; 
+}
+
+/*Links de referências*/
+.referencias li a {
+    
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
