@@ -57,12 +57,13 @@
         <div class="formulario">
             <h1>Cadastro</h1>
             <hr>
-            <form action="submit">
+            <!-- manda para o index.html-->
+            <form action="index.html" method="post">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" name="nome">
 
                 <label for="email">E-mail:</label>
-                <input type="text" name="email">
+                <input type="email" name="email">
 
                 <label for="telefone">Telefone:</label>
                 <input type="text" name="telefone">
@@ -71,9 +72,9 @@
                 <input type="text" name="cpf">
 
                 <label for="senha">Senha:</label>
-                <input type="text" name="senha">
+                <input type="password" name="senha">
 
-                <button>Cadastrar</button>
+                <button type="submit">Cadastrar</button>
             </form>
         </div>
 
