@@ -242,3 +242,11 @@ footer p a{
     color: #000000;
     text-decoration: none;
 }
+
+/*
+Adicionar:
+propriedade scroll-behavior, que define o scroll de um elemento
+@media screen para implementar responsividade
+-webkit-text-stroke para especificar a largura e a cor dos traços dos caracteres de texto.
+transform permite girar, dimensionar, inclinar ou traduzir um elemento.
+*/

@@ -18,3 +18,25 @@ function nextImage() {
     document.getElementById("slide"+ count).checked = true; 
 
 }
+
+//REDIRECIONANDO CARDS
+
+//Quando clicar no card, redireciona ao index
+function clicaCard(){
+    window.open('index.html', '_self');
+}
+
+// Adiciona o evento de clique a todos os cards
+//Faz com que que o evento só ocorra se toda a página for carregada e cria uma função
+document.addEventListener("DOMContentLoaded", function redirecionaCard() 
+{
+    //Array contendo todos os elementos cards
+    const cards = document.getElementsByClassName("card");
+
+    //loop que abrange todos os cards
+    for (let i = 0; i < cards.length; i++) {
+        //Faz com que todos os cards recebam o leitor de eventos de click 
+        //e a funçao clicaCard ocorra
+        cards[i].addEventListener("click", clicaCard);
+    }
+});
