@@ -74,7 +74,7 @@
 
 /*Container principal dos cards, serve para alinhar o título e o container-card*/
 .main-card{
-    padding: 20px 50px;
+    padding: 20px 30px;
 }
  
 /*Título dos cards*/
@@ -86,15 +86,17 @@
 
 /*Container dos cards*/
 .container-card{
-    display: flex;
-    justify-content: start;    
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 1;  
+    grid-template-areas: 'auto auto auto auto auto';
+    gap: 0 10px;
 }
 
 /*Propriedades do card*/
 .container-card .card{
     width: 250px;
     height: 300px;
-    margin: 0 5px; 
     padding: 10px;
     background-color: white; /*Cor do card*/
     border-radius: 10px; /*Borda do card*/
