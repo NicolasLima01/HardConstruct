@@ -13,13 +13,14 @@ function nextImage() {
     if (count > 2) {
         count = 1; //Volta para o primeiro slide
     }
-
     //Muda o checked do radio dos slides
     document.getElementById("slide" + count).checked = true;
 
 }
 
-//REDIRECIONANDO CARDS
+//-------------------------------------------------
+//             REDIRECIONANDO CARDS
+//-------------------------------------------------
 
 //Quando clicar no card, redireciona ao index
 function clicaCard() {
@@ -40,8 +41,9 @@ document.addEventListener("DOMContentLoaded", function redirecionaCard() {
     }
 });
 
-
-//Fazendo com que não apareça mais de 5 cards
+//-------------------------------------------------
+//            LIMITANDO NMR DE CARDS
+//-------------------------------------------------
 
 let containerCard = document.querySelector('div.container-card');
 let cards = document.getElementsByClassName('card');
@@ -55,3 +57,16 @@ while (i < cards.length) {
     }
     i++; 
 }
+
+//-------------------------------------------------
+//              CARREGANDO PÁGINA
+//-------------------------------------------------
+document.addEventListener("DOMContentLoaded", function carregamento(){
+    
+    // let carregamento = document.querySelector("body");
+    // carregamento.style.height = "100vh";
+    // carregamento.style.widtht = "100vh";
+    // carregamento.style.backgroundColor = "orange";
+    JsLoadingOverlay.Show(); 
+    JsLoadingOverlay.Hide(); 
+});
