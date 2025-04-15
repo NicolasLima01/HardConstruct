@@ -28,13 +28,8 @@ nav {
 }
 
 main {
-    height: 100vh;
+    height: 110vh;
     background-color: whitesmoke;
-}
-
-footer {
-    height: 30vh;
-    background-color: white;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -219,26 +214,76 @@ footer {
 /*                                            FOOTER                                                  */
 /*----------------------------------------------------------------------------------------------------*/
 
+
 /*Container do footer*/
 .container-footer {
+    height: auto;
+    background-color: white;
     padding: 20px 100px;
+    box-shadow: 1px 1px 1px 1px black; /* sombra do footer*/
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1;
+    grid-template-areas: '.footer-contatos .footer-info';
+    gap: 20px;
+}
+
+/* Contatos */
+.footer-contatos{
+    background-color: rgb(212, 208, 208);
+    border-radius: 20px;
+    height: 150px;
+    padding: 10px;
+}
+
+.footer-contatos h2{
+    max-width: fit-content;
+    margin: 0 auto 25px auto;
+}
+
+.list-contatos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-contatos li{
+    background-color: black;
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.list-contatos li img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.footer-info{
+    background-color: rgb(212, 208, 208);
+    border-radius: 20px;
 }
 
 /*Referencias do footer*/
-.container-footer h3 {
+.footer-info #refs {
     color: rgb(37, 37, 37);
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 /*Paragrafos do footer*/
-footer p {
-    margin: 0 200px;
+.footer-info p {
+    margin: 0 20px;
     color: rgb(37, 37, 37);
     text-align: center;
 }
 
 /*Links do footer*/
-footer p a{
+.footer-info p a{
     color: #000000;
     text-decoration: none;
 }
