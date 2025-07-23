@@ -143,6 +143,13 @@ main {
     /*Faz com que o texto fique horizontalmente no meio do item*/
 }
 
+.texto-dropdown{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Icone menu*/
 .dropdown .dropdown-icon {
     display: inline-block;
