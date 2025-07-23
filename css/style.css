@@ -41,7 +41,7 @@ nav {
 }
 
 main {
-    height: 110vh;
+    height: 800px;
     background-color: whitesmoke;
 }
 
@@ -80,8 +80,15 @@ main {
     cursor: pointer;
 }
 
-/*Ícone e link do cadastro*/
-.cadastroIcon {
+/* div dos links do header */
+.links-header{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Ícones e links do header*/
+.icones-header {
     height: 50px;
     width: 50px;
     display: flex;
