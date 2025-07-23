@@ -81,7 +81,7 @@ main {
 }
 
 /* div dos links do header */
-.links-header{
+.links-header {
     width: 180px;
     display: flex;
     justify-content: space-between;
@@ -97,8 +97,10 @@ main {
     align-items: center;
     color: black;
     text-decoration: none;
+    cursor: pointer;
 
-    font-family: "Intro Rust"; /* font intro rust*/
+    font-family: "Intro Rust";
+    /* font intro rust*/
     font-size: 14px;
 }
 
@@ -115,7 +117,8 @@ main {
     justify-content: center;
     align-items: space-around;
 
-    font-family: "Intro Rust"; /* font intro rust*/
+    font-family: "Intro Rust";
+    /* font intro rust*/
     font-size: 14px;
 }
 
@@ -169,7 +172,7 @@ main {
     /*Faz com que o texto fique horizontalmente no meio do item*/
 }
 
-.texto-dropdown{
+.texto-dropdown {
     height: 50%;
     display: flex;
     justify-content: center;
@@ -204,11 +207,13 @@ main {
     line-height: normal;
     top: 100%;
     /*Faz com que o conteudo do dropdown fique abaixo do item*/
-    border-bottom-left-radius: 10px; /*borda redonda no canto inferior direito*/
-    border-bottom-right-radius: 10px; /*borda redonda no canto inferior esquerdo*/
+    border-bottom-left-radius: 10px;
+    /*borda redonda no canto inferior direito*/
+    border-bottom-right-radius: 10px;
+    /*borda redonda no canto inferior esquerdo*/
 }
 
-.dropdown-conteudo li{
+.dropdown-conteudo li {
     list-style: none;
     border-top: #000000 solid 1px;
 }
@@ -238,9 +243,11 @@ main {
 }
 
 /*Ocorre quando o mouse está sobre o último elemento do dropdown*/
-.dropdown-conteudo li:nth-child(5) a:hover{
-    border-bottom-left-radius: 10px; /*borda redonda no canto inferior direito*/
-    border-bottom-right-radius: 10px; /*borda redonda no canto inferior esquerdo*/
+.dropdown-conteudo li:nth-child(5) a:hover {
+    border-bottom-left-radius: 10px;
+    /*borda redonda no canto inferior direito*/
+    border-bottom-right-radius: 10px;
+    /*borda redonda no canto inferior esquerdo*/
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -253,7 +260,8 @@ main {
     height: auto;
     background-color: white;
     padding: 20px 100px;
-    box-shadow: 1px 1px 1px 1px black; /* sombra do footer*/
+    box-shadow: 1px 1px 1px 1px black;
+    /* sombra do footer*/
 
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -263,19 +271,19 @@ main {
 }
 
 /* Contatos */
-.footer-contatos{
+.footer-contatos {
     background-color: rgb(212, 208, 208);
     border-radius: 20px;
     height: 150px;
     padding: 10px;
 }
 
-.footer-contatos h2{
+.footer-contatos h2 {
     max-width: fit-content;
     margin: 0 auto 25px auto;
 }
 
-.list-contatos{
+.list-contatos {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -283,7 +291,7 @@ main {
     gap: 10px;
 }
 
-.list-contatos li{
+.list-contatos li {
     background-color: black;
     list-style: none;
     height: 50px;
@@ -291,13 +299,13 @@ main {
     border-radius: 100%;
 }
 
-.list-contatos li img{
+.list-contatos li img {
     height: 100%;
     width: 100%;
     border-radius: 100%;
 }
 
-.footer-info{
+.footer-info {
     background-color: rgb(212, 208, 208);
     border-radius: 20px;
 }
@@ -316,7 +324,7 @@ main {
 }
 
 /*Links do footer*/
-.footer-info p a{
+.footer-info p a {
     color: #000000;
     text-decoration: none;
 }
@@ -328,3 +336,34 @@ propriedade scroll-behavior, que define o scroll de um elemento
 -webkit-text-stroke para especificar a largura e a cor dos traços dos caracteres de texto.
 transform permite girar, dimensionar, inclinar ou traduzir um elemento.
 */
+
+/* OFF CANVAS CARRINHO */
+
+.off-canvas {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    /* Deixa a frente da página*/
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    /* Desabilita scroll vertical */
+    overflow-x: hidden;
+    padding-top: 60px;
+    /* 0.5 segundos de transição */
+    transition: 0.5s;    
+    
+    font-family: "Intro Rust";
+}
+
+.closeIconContainer{
+    display: flex;
+    justify-content: end;
+}
+
+.closeIconContainer .closebtn{
+    font-size: 50px;
+    text-decoration: none;
+    color: #000000;
+}

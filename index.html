@@ -15,6 +15,13 @@
 
 <body>
 
+    <div id="offcanvas-carrinho" class="off-canvas">
+        <div class="closeIconContainer">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeOffCanvasCarrinho()">&times;</a>
+        </div>
+        <h2>Carrinho</h2>
+    </div>
+
     <!-- INICIO HEADER -->
 
     <header>
@@ -38,10 +45,10 @@
                 <img height="50px" width="50px" src="IMG/pessoa.png" alt="cadastro"><br>
                 <p>Cadastro</p>
             </a>
-            <a class="icones-header" href="Cadastro.html">
+            <div class="icones-header" onclick="openOffCanvasCarrinho()">
                 <img height="50px" width="50px" src="IMG/carrinho-de-compras.png" alt="carrinho"><br>
                 <p>Carrinho</p>
-            </a>
+            </div>
         </div>
 
     </header>
