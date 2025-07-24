@@ -76,15 +76,17 @@ document.addEventListener("DOMContentLoaded", function carregamento() {
 //-------------------------------------------------
 //              OFF CANVAS CARRINHO
 //-------------------------------------------------
+
 /* Aumentando o tamanho da off-canvas*/
 function openOffCanvasCarrinho() {
-  document.getElementById("offcanvas-carrinho").style.width = "250px";
-  document.getElementById("offcanvas-carrinho").style.padding = "0 10px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.getElementById("offcanvas-carrinho").style.width = "250px";
+    document.getElementById("offcanvas-carrinho").style.padding = "0 20px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
-/* dimnui o tamandho do offcanvas para 0 */
+/* diminui o tamandho do offcanvas para 0 */
 function closeOffCanvasCarrinho() {
-  document.getElementById("offcanvas-carrinho").style.width = "0";
-  document.body.style.backgroundColor = "white";
+    document.getElementById("offcanvas-carrinho").style.width = "0";
+    document.getElementById("offcanvas-carrinho").style.padding = "0px";
+    document.body.style.backgroundColor = "white";
 } 

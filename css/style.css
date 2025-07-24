@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    height: 20vh;
+    height: 145px;
     background-color: #ffa500;
     padding: 0 20px;
     display: flex;
@@ -33,7 +33,7 @@ header {
 }
 
 nav {
-    height: 10vh;
+    height: 75px;
     background-color: black;
     color: white;
     display: flex;
@@ -350,9 +350,8 @@ transform permite girar, dimensionar, inclinar ou traduzir um elemento.
     background-color: white;
     /* Desabilita scroll vertical */
     overflow-x: hidden;
-    padding-top: 60px;
-    /* 0.5 segundos de transição */
-    transition: 0.5s;    
+    /* 0.3 segundos de transição */
+    transition: 0.3s;    
     
     font-family: "Intro Rust";
 }
