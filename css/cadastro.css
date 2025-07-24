@@ -19,11 +19,10 @@ main{
 
 .formulario div{
     height: 60px;
-    padding: 0 20px;
+    padding: 30px 50px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }    
 
@@ -62,12 +61,11 @@ form input {
 }
 
 form input:hover{
-    border: 1px solid #ffa500;
+    border: 1px solid #fb8a00;
     transition: 0.2s;
 }
 
 form input:focus{
-    border: 1px solid #ffa500;
     color: black;
     transition: 0.2s; 
     outline: none;
@@ -80,9 +78,9 @@ form button{
     height: 50px;
     margin-top: 30px;
     background-color: #ff8801;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 14px;
-    border: solid 1px rgb(212, 51, 1);
+    border: solid 1px black;
     border-radius: 5px;
     align-self: center;
     transition: 0.5s;
@@ -90,7 +88,6 @@ form button{
 
 /*Acontece quando o mouse está sobre o botão*/
 form button:hover{
-    background-color: #ffa500;
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
