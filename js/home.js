@@ -2,24 +2,39 @@
 //         PASSADOR DE SLIDES AUTOMÁTICO
 //-------------------------------------------------
 
-let countSlide = 1;
+let countSlide = 1; //predefinindo o primeiro slide
+fnlSlide = document.querySelector(".slider").childElementCount; //predefinido o último slide
 document.getElementById("slide1").checked = true; //torna o radio do slide1 checado
 
 //Roda a função de 5 em 5s
 setInterval(function () {
     nextImage();
-}, 5000)
+}, 8000)
 
 //Função que passa as imagens do slide automáticamente  
 function nextImage() {
     countSlide++;
-    if (countSlide > 2) {
+    if (countSlide > fnlSlide) {
         countSlide = 1; //Volta para o primeiro slide
     }
     //Muda o checked do radio dos slides
     document.getElementById("slide" + countSlide).checked = true;
 
 }
+
+function prevImage() {
+    countSlide = countSlide - 1;
+    if (countSlide < 1) {
+        countSlide = fnlSlide; //Vai ao último slide
+    }
+    //Muda o checked do radio dos slides
+    document.getElementById("slide" + countSlide).checked = true;
+
+}
+
+document.getElementById("seta-direita").addEventListener("click", nextImage);
+document.getElementById("seta-esquerda").addEventListener("click", prevImage);
+
 
 //-------------------------------------------------
 //             REDIRECIONANDO CARDS
@@ -68,9 +83,9 @@ document.addEventListener("DOMContentLoaded", function carregamento() {
     // let carregamento = document.querySelector("body");
     // carregamento.style.height = "100vh";
     // carregamento.style.widtht = "100vh";
-    // carregamento.style.backgroundColor = "orange";
-    JsLoadingOverlay.Show();
-    JsLoadingOverlay.Hide();
+    // // carregamento.style.backgroundColor = "orange";
+    // JsLoadingOverlay.Show();
+    // JsLoadingOverlay.Hide();
 });
 
 //-------------------------------------------------
