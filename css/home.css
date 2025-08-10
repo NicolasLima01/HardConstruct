@@ -84,6 +84,28 @@
     /*Tempo de transição da cor do botão de radio*/
 }
 
+.slider .seta-carrosel {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.slider #seta-direita {
+    top: 48%;
+    left: 98%;
+}
+
+.slider #seta-esquerda {
+    transform: rotate(0.5turn);
+    top: 48%;
+    left: 1%;
+}
+
 
 /*----------------------CARD---------------------------*/
 
