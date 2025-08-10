@@ -25,26 +25,26 @@
     width: 100%;
     margin: auto;
     vertical-align: top;
+    /*Deixa a imagem invisível*/
     opacity: 0;
     /*Deixa a imagem invisível*/
     visibility: hidden;
-    /*Deixa a imagem invisível*/
-    transition: 1.5s;
     /*Tempo de transição da imagem do slider*/
+    transition: 1.5s;
 }
 
 .slider input {
-    display: none;
     /*Esconde o botão de radio*/
+    display: none;
 }
 
 /*Botão de radio*/
+
 .slider label {
     position: absolute;
     cursor: pointer;
-    background-color: white
-        /*Cor do botão de radio*/
-    ;
+    /*Cor do botão de radio*/
+    background-color: white;
     display: block;
     height: 5px;
     width: 30px;
@@ -53,55 +53,63 @@
 }
 
 /*Posicionamento do botão de radio*/
+
 .slider li:nth-child(1) label {
+    /*Determina o local do botão de radio*/
     left: 350px;
-    /*Determina o local do botão de radio*/
-    bottom: 10px;
     /*Faz com que o botão fique centralizado verticalmente*/
+    bottom: 10px;
 }
 
 /*Posicionamento do botão de radio*/
+
 .slider li:nth-child(2) label {
-    left: 390px;
     /*Determina o local do botão de radio*/
-    bottom: 10px;
+    left: 390px;
     /*Faz com que o botão fique centralizado verticalmente*/
+    bottom: 10px;
 }
 
 /*Posicionamento do botão de radio*/
+
 .slider input:checked~img {
+    /*Quando o botão está checado, deixa a imagem visivel*/
     opacity: 1;
     /*Quando o botão está checado, deixa a imagem visivel*/
     visibility: visible;
-    /*Quando o botão está checado, deixa a imagem visivel*/
     z-index: 10;
 }
 
 /*Muda a cor do botão de radio quando está checado*/
 .slider input:checked~label {
     background-color: #000000;
-    transition: 1.5s;
     /*Tempo de transição da cor do botão de radio*/
+    transition: 1.5s;
 }
 
+/* Classe das setas do carros */
 .slider .seta-carrosel {
     position: absolute;
     height: 25px;
     width: 25px;
+    /* Torna as setas vísiveis */
     opacity: 1;
     visibility: visible;
-    cursor: pointer;
+    /* Deixa a imagem acima dos outros elementos do slider */
     z-index: 1;
-
+    cursor: pointer;
 }
 
 .slider #seta-direita {
+    /* alinhando seta */
     top: 47%;
     right: 2%;
 }
 
 .slider #seta-esquerda {
+    /* Girando a seta para ficar à esquerda */
     transform: rotate(0.5turn);
+    /* alinhando seta */
     top: 47%;
     left: 2%;
 }

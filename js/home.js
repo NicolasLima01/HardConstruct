@@ -11,7 +11,7 @@ setInterval(function () {
     nextImage();
 }, 8000)
 
-//Função que passa as imagens do slide automáticamente  
+//Função que passa as imagens do slide  
 function nextImage() {
     countSlide++;
     if (countSlide > fnlSlide) {
@@ -19,9 +19,10 @@ function nextImage() {
     }
     //Muda o checked do radio dos slides
     document.getElementById("slide" + countSlide).checked = true;
-
+    
 }
 
+//Função que passa as imagens do slide para trás  
 function prevImage() {
     countSlide = countSlide - 1;
     if (countSlide < 1) {
