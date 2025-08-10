@@ -86,8 +86,8 @@
 
 .slider .seta-carrosel {
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     opacity: 1;
     visibility: visible;
     cursor: pointer;
@@ -96,14 +96,14 @@
 }
 
 .slider #seta-direita {
-    top: 48%;
-    left: 98%;
+    top: 47%;
+    right: 2%;
 }
 
 .slider #seta-esquerda {
     transform: rotate(0.5turn);
-    top: 48%;
-    left: 1%;
+    top: 47%;
+    left: 2%;
 }
 
 
