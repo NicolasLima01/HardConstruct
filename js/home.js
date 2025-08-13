@@ -77,19 +77,6 @@ setInterval(function () {
 }, 5000);
 
 //-------------------------------------------------
-//              CARREGANDO PÁGINA
-//-------------------------------------------------
-document.addEventListener("DOMContentLoaded", function carregamento() {
-
-    // let carregamento = document.querySelector("body");
-    // carregamento.style.height = "100vh";
-    // carregamento.style.widtht = "100vh";
-    // // carregamento.style.backgroundColor = "orange";
-    // JsLoadingOverlay.Show();
-    // JsLoadingOverlay.Hide();
-});
-
-//-------------------------------------------------
 //              OFF CANVAS CARRINHO
 //-------------------------------------------------
 

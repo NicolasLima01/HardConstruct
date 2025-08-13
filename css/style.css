@@ -352,8 +352,11 @@ transform permite girar, dimensionar, inclinar ou traduzir um elemento.
     overflow-x: hidden;
     /* 0.3 segundos de transição */
     transition: 0.3s;    
-    
+}
+
+.off-canvas h2{
     font-family: "Intro Rust";
+    margin-bottom: 30px;
 }
 
 .closeIconContainer{
